@@ -8,7 +8,7 @@ if [ "$#" -lt 2 ]; then
     exit 1
 fi
 
-echo "retriving aa_sequences..."
+echo "retriving nt_sequences..."
 
 while read SGB;
 do
