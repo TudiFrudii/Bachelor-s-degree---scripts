@@ -5,7 +5,9 @@ will be modified each time in order to run PathoFact.
 
 In order to run, Pathofact needs a directory containing *n* subdirectories with the SGBs' ID. In each subfolder a file "{SGB}_50.fna" is needed.
 Please notice that the extension .fna is compulsory, therefore you could need to rename files coming from /shares/CIBIO-Storage/CM/scratch/users/aitor.blancomiguez/tests/chocophlansgb/uniref90_pangenome/get_core_genes_nt.py 
-In this script there are some variables that could need to be changed as the path for SignalP.
+In this script there are some variables that could need to be changed:
+- the path for SignalP
+- the path of the config.yaml file, which needs to be inside the dir of PathoFact installation
 
 The scritp needs two args:
 - input direcroty
