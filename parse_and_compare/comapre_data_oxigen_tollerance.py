@@ -8,9 +8,6 @@ SGB_aero = [552, 554, 11225, 32271, 32272, 89658, 33387, 21529, 21530, 28362, 84
 def phenotrex_traitar_comparison2(phenotrex, traitar):
     print("\ncomputing a comparison between phenotrex and traitar outputs ...\n")
 
-    phenotrex = phenotrex.reset_index()
-    traitar = traitar.reset_index()
-
     counter_ana = 0
     counter_aero = 0
     phe_ana_true = 0
@@ -21,6 +18,9 @@ def phenotrex_traitar_comparison2(phenotrex, traitar):
     phe_aero_false = 0
     tra_ana_false = 0
     tra_aero_false = 0
+
+    phenotrex = phenotrex.reset_index()
+    traitar = traitar.reset_index()
 
     for index_phe, row_phe in phenotrex.iterrows():
         for index_tra, row_tra in traitar.iterrows():
