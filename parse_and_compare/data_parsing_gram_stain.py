@@ -45,12 +45,7 @@ def traitar_parsing():
     # this function is upposed to parse the output of traitar classifier\
     print("main directory is: ", traiatar_dir)
     row_list = []
-
-    '''
-    for root, subfolders, files in os.walk(phenotrex_dir):
-            for file in files:
-    '''
-
+    
     for subset_dir in os.listdir(traiatar_dir):
         #POS/NEG dir
         print("considering", subset_dir)
